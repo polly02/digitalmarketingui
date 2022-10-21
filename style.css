@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font: 400 14px "Oswald";
+}
+
+body {
+  background-color: #FFFFFF;
+  width: 1120px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 120px;
+  margin-right: 120px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: #FFFFFF;
+  width: 1120px;
+}
+header .logo {
+  background-image: url(./assets/IMAGE.svg);
+  width: 93px;
+  height: 32px;
+  margin-top: 23px;
+}
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  margin-top: 30px;
+}
+header ul li:not(:last-child) {
+  margin-right: 40px;
+}
+header .btn {
+  background-color: #0057FF;
+  border-radius: 30px;
+  border: none;
+  width: 193px;
+  height: 52px;
+  color: #FFFFFF;
+  margin-top: 15px;
+}
+
+main .left-side {
+  background-image: url(./assets/IMAGE.png);
+  width: 540px;
+  height: 589px;
+  margin-top: 169px;
+  margin-left: 120px;
+}
