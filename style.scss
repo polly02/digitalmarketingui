@@ -52,7 +52,7 @@ body {
 }
 
 main {
-    
+
     .left-side {
         background-image: url(./assets/IMAGE.png);
         width: 540px;
@@ -83,12 +83,12 @@ main {
             flex-direction: row;
 
             p {
-                // margin-left: 40px;
+
                 margin: 30px 40px 30px 40px;
                 font: 400 16px "Oswald";
             }
 
-            .plus{
+            .plus {
                 background-image: url(./assets/Frame.png);
                 width: 25px;
                 height: 25px;
@@ -96,13 +96,16 @@ main {
             }
         }
 
-        .mean{
+        .mean {
             border: 1px solid #E7E7E7;
             width: 498px;
-            p{
+
+            p {
                 margin: 10px 50px 10px 50px;
                 font: 400 14px "Oswald";
             }
         }
     }
+
+
 }
