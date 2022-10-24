@@ -5,16 +5,17 @@
     font: 400 14px "Oswald";
 }
 
-body{
+body {
     background-color: #FFFFFF;
     width: 1120px;
+    margin: auto;
+    position: relative;
 }
 
-header {
+
+.head {
     display: flex;
     justify-content: space-between;
-    margin-left: 120px;
-    margin-right: 120px;
     position: fixed;
     top: 0;
     z-index: 2;
@@ -39,23 +40,69 @@ header {
         }
     }
 
-    .btn{
-       background-color: #0057FF;
-       border-radius: 30px;
-       border: none;
-       width: 193px;
-       height: 52px;
-       color: #FFFFFF;
-       margin-top: 15px;
+    .btn {
+        background-color: #0057FF;
+        border-radius: 30px;
+        border: none;
+        width: 193px;
+        height: 52px;
+        color: #FFFFFF;
+        margin-top: 15px;
     }
 }
 
-main{
-    .left-side{
+main {
+    
+    .left-side {
         background-image: url(./assets/IMAGE.png);
         width: 540px;
         height: 589px;
-        margin-top: 169px;
-        margin-left: 120px;
+        position: absolute;
+        top: 140px;
+    }
+
+    .right-side {
+        position: absolute;
+        left: 55%;
+        top: 140px;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            font: 400 15px "Roboto";
+            margin-top: 48px;
+            margin-bottom: 58px;
+        }
+
+        .block {
+            width: 498px;
+            border: 1px solid #E7E7E7;
+            display: flex;
+            flex-direction: row;
+
+            p {
+                // margin-left: 40px;
+                margin: 30px 40px 30px 40px;
+                font: 400 16px "Oswald";
+            }
+
+            .plus{
+                background-image: url(./assets/Frame.png);
+                width: 25px;
+                height: 25px;
+                margin: 30px 40px 30px auto;
+            }
+        }
+
+        .mean{
+            border: 1px solid #E7E7E7;
+            width: 498px;
+            p{
+                margin: 10px 50px 10px 50px;
+                font: 400 14px "Oswald";
+            }
+        }
     }
 }

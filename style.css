@@ -8,30 +8,30 @@
 body {
   background-color: #FFFFFF;
   width: 1120px;
+  margin: auto;
+  position: relative;
 }
 
-header {
+.head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 120px;
-  margin-right: 120px;
   position: fixed;
   top: 0;
   z-index: 2;
   background-color: #FFFFFF;
   width: 1120px;
 }
-header .logo {
+.head .logo {
   background-image: url(./assets/IMAGE.svg);
   width: 93px;
   height: 32px;
   margin-top: 23px;
 }
-header ul {
+.head ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,10 +41,10 @@ header ul {
   list-style-type: none;
   margin-top: 30px;
 }
-header ul li:not(:last-child) {
+.head ul li:not(:last-child) {
   margin-right: 40px;
 }
-header .btn {
+.head .btn {
   background-color: #0057FF;
   border-radius: 30px;
   border: none;
@@ -58,6 +58,48 @@ main .left-side {
   background-image: url(./assets/IMAGE.png);
   width: 540px;
   height: 589px;
-  margin-top: 169px;
-  margin-left: 120px;
+  position: absolute;
+  top: 140px;
+}
+main .right-side {
+  position: absolute;
+  left: 55%;
+  top: 140px;
+}
+main .right-side h1 {
+  font-size: 40px;
+}
+main .right-side p {
+  font: 400 15px "Roboto";
+  margin-top: 48px;
+  margin-bottom: 58px;
+}
+main .right-side .block {
+  width: 498px;
+  border: 1px solid #E7E7E7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+main .right-side .block p {
+  margin: 30px 40px 30px 40px;
+  font: 400 16px "Oswald";
+}
+main .right-side .block .plus {
+  background-image: url(./assets/Frame.png);
+  width: 25px;
+  height: 25px;
+  margin: 30px 40px 30px auto;
+}
+main .right-side .mean {
+  border: 1px solid #E7E7E7;
+  width: 498px;
+}
+main .right-side .mean p {
+  margin: 10px 50px 10px 50px;
+  font: 400 14px "Oswald";
 }
