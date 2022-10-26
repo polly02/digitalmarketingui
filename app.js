@@ -18,5 +18,4 @@ class Infoblock {
         }
     }
 }
-
 const infoblock = new Infoblock()
