@@ -74,7 +74,10 @@ main .right-side p {
   margin-top: 48px;
   margin-bottom: 58px;
 }
-main .right-side .block {
+main .right-side .wrapper {
+  margin-bottom: 30px;
+}
+main .right-side .wrapper .block {
   width: 498px;
   border: 1px solid #E7E7E7;
   display: -webkit-box;
@@ -85,21 +88,21 @@ main .right-side .block {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-main .right-side .block p {
+main .right-side .wrapper .block p {
   margin: 30px 40px 30px 40px;
   font: 400 16px "Oswald";
 }
-main .right-side .block .plus {
+main .right-side .wrapper .block .plus {
   background-image: url(./assets/Frame.png);
   width: 25px;
   height: 25px;
   margin: 30px 40px 30px auto;
 }
-main .right-side .mean {
-  border: 1px solid #E7E7E7;
+main .right-side .wrapper .response {
   width: 498px;
+  border: 1px solid #E7E7E7;
 }
-main .right-side .mean p {
+main .right-side .wrapper .response p {
   margin: 10px 50px 10px 50px;
   font: 400 14px "Oswald";
 }

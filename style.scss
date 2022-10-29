@@ -5,8 +5,12 @@
     font: 400 14px "Oswald";
 }
 
+$background-color: #FFFFFF;
+$btn-color: #0057FF;
+$border-color: #E7E7E7;
+
 body {
-    background-color: #FFFFFF;
+    background-color: $background-color;
     width: 1120px;
     margin: auto;
     position: relative;
@@ -19,7 +23,7 @@ body {
     position: fixed;
     top: 0;
     z-index: 2;
-    background-color: #FFFFFF;
+    background-color: $background-color;
     width: 1120px;
 
     .logo {
@@ -41,12 +45,12 @@ body {
     }
 
     .btn {
-        background-color: #0057FF;
+        background-color: $btn-color;
         border-radius: 30px;
         border: none;
         width: 193px;
         height: 52px;
-        color: #FFFFFF;
+        color: $background-color;
         margin-top: 15px;
     }
 }
@@ -76,36 +80,37 @@ main {
             margin-bottom: 58px;
         }
 
-        .block {
-            width: 498px;
-            border: 1px solid #E7E7E7;
-            display: flex;
-            flex-direction: row;
+        .wrapper {
+            margin-bottom: 30px;
 
-            p {
+            .block {
+                width: 498px;
+                border: 1px solid $border-color;
+                display: flex;
+                flex-direction: row;
 
-                margin: 30px 40px 30px 40px;
-                font: 400 16px "Oswald";
+                p {
+                    margin: 30px 40px 30px 40px;
+                    font: 400 16px "Oswald";
+                }
+
+                .plus {
+                    background-image: url(./assets/Frame.png);
+                    width: 25px;
+                    height: 25px;
+                    margin: 30px 40px 30px auto;
+                }
             }
 
-            .plus {
-                background-image: url(./assets/Frame.png);
-                width: 25px;
-                height: 25px;
-                margin: 30px 40px 30px auto;
-            }
-        }
+            .response {
+                width: 498px;
+                border: 1px solid $border-color;
 
-        .mean {
-            border: 1px solid #E7E7E7;
-            width: 498px;
-
-            p {
-                margin: 10px 50px 10px 50px;
-                font: 400 14px "Oswald";
+                p {
+                    margin: 10px 50px 10px 50px;
+                    font: 400 14px "Oswald";
+                }
             }
         }
     }
-
-
 }
